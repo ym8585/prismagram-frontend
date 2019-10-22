@@ -1,5 +1,5 @@
 export const defaults = {
-    isLoggedIn : localStorage.getItem("token") !== null ? true : false
+    isLoggedIn : Boolean(localStorage.getItem("token")) || false
     /* 'isLoggedIn : false' -->항상 false 이면 안된다. So, token이 있는지 확인하고 있으면 true*/
 };
 
