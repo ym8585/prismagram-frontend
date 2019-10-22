@@ -7,4 +7,4 @@ export default new ApolloClient({
         defaults,
         resolvers
     }
-})
+});
